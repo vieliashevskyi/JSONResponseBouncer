@@ -54,8 +54,8 @@ class TestPlayerModel: Verifiable {
 //MARK: Test Model that is not Verifiable
 class InvalidTestModel {}
 
-//MARK: JSONResponsseBouncer Tests
-class JSONResponsseBouncer: XCTestCase {
+//MARK: JSONResponseBouncer Tests
+class JSONResponseBouncerTests: XCTestCase {
 
 	override func setUp() {
 		super.setUp()

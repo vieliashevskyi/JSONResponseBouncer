@@ -1,8 +1,7 @@
 //
 //  JSONDefinitions.swift
 //
-//  Created by Vladyslav Ieliashevskyi on 8/7/17.
-//  Copyright © 2017. All rights reserved.
+//  Created by Vladyslav Ieliashevskyi on 09.02.2021.
 //
 
 import Foundation

@@ -1,25 +1,28 @@
 //
 //  JSONResponseBouncer.swift
 //
-//  Created by Vladyslav Ieliashevskyi on 7/27/17.
-//  Copyright © 2017. All rights reserved.
+//  Created by Vladyslav Ieliashevskyi on 09.02.2021.
 //
 
 import Foundation
 
-@objc class SRJSONValidationMapper : NSObject {
+@objc class JSONBouncerMapper : NSObject {
 	public static func validate(_ route: String, json: Dictionary<String, Any>) -> JSONResponseState {
 		// TODO: Map your API endpoints
+
+		/*
+			I find it handy to have endpoints listed in a following way:
+			@objc class APIRouter: NSObject {
+				static let userLogin = "/user/login"
+				...
+			}
+
+			This way I can use them to neatly switch through
+		*/
 		switch route {
-			/*
-				I find it handy to have endpoints listed in a following way
-				@objc class APIRouter: NSObject {
-					static let userLogin = "/user/login"
-				}
-			*/
-			//case APIRouter.<YOUR ENDPOINT>:
-			//VILog.success(message: "Validator found for API route -> \(route)")
-			//return JSONResponseBouncer.validate(dictionary: json, model: <YOUR MODEL>)
+//			case APIRouter.<YOUR ENDPOINT>:
+//				VILog.success(message: "Validator found for API route -> \(route)")
+//				return JSONResponseBouncer.validate(dictionary: json, model: <YOUR MODEL>)
 			default:
 				VILog.error(message: "No mapped validator found for current route -> \(route)")
 				return .Malformed
