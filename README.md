@@ -9,8 +9,8 @@ System supports validation of following types:
 * String
 * NSNumber
 * Boolean
-* Array<Any>
-* Dictionary<String, Any>
+* Array\<Any\>
+* Dictionary\<String, Any\>
 
 Handy to catch differences between expected model on client side and what arrives from server. Saves a lot of time during rapid development phase. Performed well on two mobile games so far.
 
