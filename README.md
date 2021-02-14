@@ -23,5 +23,6 @@ System is fully tested and does not require additional unit tests upon integrati
 * Drag-and-Drop files to your repository
 * Make sure your model conforms to **Verifiable** protocol
 * Define your model. For example head to **TestPlayerModel** inside **JSONResponseBouncerTests.swift** file
-* Map your API endpoints to appropriate models inside **JSONBouncerMapper.validate** function.
+* Map your API endpoints to appropriate models inside **JSONBouncerMapper.validate** function
+* Call **JSONBouncerMapper.validate** in a desired RESTful function (POST, GET, etc.) and work with validated response based on project needs
 * You are all set up
